@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <div id="myid"></div>
+  <hr>
+  <button onclick="fn()">Call Me!!!</button>
+
+  <script>
+    function fn() {
+      // let data=["Raja",23,"Bihar"];
+      // let data = {Name: "Raja", Age: 23};
+      // let data=99999999999999999999n;
+      let data = true;
+      data = null;
+      document.getElementById("myid").innerHTML = "Value : " + data + "<br> Type : " + typeof (data);
+    }
+
+  </script>
+</body>
+</html>
