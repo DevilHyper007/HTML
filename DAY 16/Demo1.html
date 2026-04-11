@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <div id="myid"></div>
+  <hr>
+  <!-- <button onclick="add()">Call Function</button> -->
+  <script>
+    let ctr = document.getElementById("myid");
+    function add(a = 5, b = 200) {
+
+      return a + b;
+    }
+    ctr.innerHTML += add(10, 20) + "<br>";
+    ctr.innerHTML += add(10, 2) + "<br>";
+    ctr.innerHTML += add(10) + "<br>";
+    ctr.innerHTML += add() + "<br>";
+  </script>
+</body>
+</html>

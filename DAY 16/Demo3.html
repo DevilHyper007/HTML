@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <div id="myid"></div>
+  <hr>
+  <!-- <button onclick="add()">Call Function</button> -->
+  <script>
+    let ctr = document.getElementById("myid");
+    let call = (a, b) => { return a + b; }
+    let company = () => { return "Macliys"; }
+    ctr.innerHTML += "Type of: " + typeof (call) + "<br>";
+    ctr.innerHTML += call(27, 34) + "<br>";
+    ctr.innerHTML += company() + "<br>";
+  </script>
+</body>
+</html>

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <div id="myid"></div>
+  <hr>
+  <button onclick="counter()">Call Function</button>
+  <script>
+    let ctr = document.getElementById("myid");
+    // const counter = (function () {
+    //   let count = 0;
+    //   return function () {
+    //     count++;
+    //     ctr.innerHTML += count + "<br>";
+    //   }
+    // })();
+
+    let data = ["Raja", 30, "Singh", 23, 45];
+    data[3] = 24;
+    ctr.innerHTML = data[0] + "<br>";
+    ctr.innerHTML += data.length + "<br>";
+    ctr.innerHTML += Array.isArray(data) + "<br>";
+    for (let i = 0; i < data.length; i++) {
+      ctr.innerHTML += "i = " + i + " value : " + data[i] + "<br>";
+    }
+  </script>
+</body>
+</html>
