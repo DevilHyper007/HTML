@@ -19,7 +19,7 @@ table tr:nth-child(even) {
   background-color: lightslategray;
 }
 
-table tr:hover {
+tbody tr:hover {
   background-color: lightsteelblue;
 }
 
