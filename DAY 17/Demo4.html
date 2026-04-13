@@ -5,19 +5,11 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Document</title>
 </head>
-<body>
-  <button id="myid">Hi</button>
+<body onload="fn()" id="myid">
   <script>
-
-    let ctr = document.getElementById("myid");
-
     function fn() {
-      ctr.innerHTML = "Welcome!!!";
+      document.getElementById("myid").style.backgroundColor = "lightgreen";
     }
-
-    ctr.addEventListener("click", fn);
-    ctr.removeEventListener("click", fn);
-
   </script>
 </body>
 </html>

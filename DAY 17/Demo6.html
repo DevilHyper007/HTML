@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <div id="myid"></div>
+  <hr>
+  <script>
+    let ctr = document.getElementById("myid");
+
+    let txt1 = "Sarthak Kumar Singh Kumar";
+    let txt2 = " from Lucknow";
+    ctr.innerHTML += txt1.length + "<br>";
+    ctr.innerHTML += txt1.concat(" - " + txt2) + "<br>";
+    ctr.innerHTML += txt1.toLowerCase() + "<br>";
+    ctr.innerHTML += txt1.toUpperCase() + "<br>";
+    ctr.innerHTML += txt1[10] + "<br>";
+    let txt3 = "            Sarthak";
+    ctr.innerHTML += txt3.trim() + "<br>";
+    ctr.innerHTML += txt3.trimLeft() + "<br>";
+    ctr.innerHTML += txt3.trimRight() + "<br>";
+    ctr.innerHTML += txt1.substr(7, 6) + "<br>";
+    ctr.innerHTML += txt1.repeat(3) + "<br>";
+    let amount = "10";
+    ctr.innerHTML += amount.padStart(4, "-") + "<br>";
+    ctr.innerHTML += amount.padEnd(4, "-") + "<br>";
+    ctr.innerHTML += txt1.replace("Kumar", "-----") + "<br>";
+    ctr.innerHTML += txt1.replaceAll("Kumar", "-----") + "<br>";
+    let arr = txt1.split(" ");
+
+    for (let i = 0; i < arr.length; i++) {
+      ctr.innerHTML += "[" + i + "] : " + arr[i] + "<br>";
+    }
+  </script>
+</body>
+</html>
